@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="A rock, paper & scissor game"/>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Rock, paper & scissors</title>
+</head>
+<body>
+
+    <header>
+        <h1>Rock, paper & scissors</h1>
+        <p>with HTML, CSS and Javascript</p>
+    </header>
+    <main>
+        <p class="instructions" id="instructions">
+            First to get 5 points win.
+        </p>
+        <div class="score">
+            <p class="name name-player">Player</p>
+            <p class="name name-computer">Computer</p>
+            <p class="points">
+                <span id="points-user">0</span>
+                <span>-</span>
+                <span id="points-computer">0</span>
+            </p>
+        </div>
+        <div class="choose-weapon" id="choose-weapon">
+            <h2>Choose your weapon for the next round</h2>
+            <div class="weapons">
+                <button class="weapon" id="rock🧱">🧱</button>
+                <button class="weapon" id="paper📋">📋</button>
+                <button class="weapon" id="scissor✂️">✂️</button>
+            </div>
+        </div>
+        <div class="message disabled" id="message">
+            <p>
+                You used <span class="choice" id="choice-user">paper📋</span><br>
+                and the computer used <span class="choice" id="choice-computer">rock🧱</span>
+            </p>
+            <p id="win-point"> You won a point! 🔥</p>
+        </div>
+        <button class="btn disabled" id="restart">Restart game</button>
+    </main>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
