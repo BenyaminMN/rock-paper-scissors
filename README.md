@@ -1,4 +1,4 @@
-# Rock, paper & scissors
+# Rock, Paper & Scissors
 
 This website is designed for an exclusive expierence where you will enjoy the game that every single one of us has played as a child. 
 Rock, paper & scissors is a game developed in HTML, CSS and JavaScript. 
@@ -13,7 +13,7 @@ It is also an entertaining game in which you can spend unlimited hours on.
 
 - __The Rock, Paper & Scissors Heading__
 
-  - Featured at the top of the page, the Rock, paper & scissors heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
+  - Featured at the top of the page. The Rock, Paper & Scissors heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
 ![Logo](media/heading.png)
 
