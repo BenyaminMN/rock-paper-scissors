@@ -5,7 +5,7 @@ let instructions = document.querySelector("#instructions");
 let containerPointsUser = document.querySelector("#points-user");
 let containerPointsPC = document.querySelector("#points-computer");
 let message = document.querySelector("#message");
-let containerWinPoint= document.querySelector("#win-point");
+let containerWinPoint = document.querySelector("#win-point");
 let chooseWeapon = document.querySelector("#choose-weapon");
 
 let containerChoiceUser = document.querySelector("#choice-user");
@@ -26,11 +26,11 @@ function startTurn(e) {
     // scissor => 2
 
     if(choicePC === 0) {
-        choicePC = "rock🧱"
+        choicePC = "rock🧱";
     } else if (choicePC === 1) {
-        choicePC = "paper📋"
+        choicePC = "paper📋";
     } else if (choicePC === 2) {
-        choicePC = "scissor✂️"
+        choicePC = "scissor✂️";
     }
 
     // rock wins over scissor
@@ -39,15 +39,15 @@ function startTurn(e) {
     // if you choose the same as the computer it is a draw
 
     if (
-        (choiceUser === "rock🧱" && choicePC === "scissor✂️")
-        (choiceUser === "scissor✂️" && choicePC === "paper📋")
+        (choiceUser === "rock🧱" && choicePC === "scissor✂️") ||
+        (choiceUser === "scissor✂️" && choicePC === "paper📋") ||
         (choiceUser === "paper📋" && choicePC === "rock🧱")
     ) {
         winUser();
     } else if (
-        (choiceUser === "rock🧱" && choicePC === "scissor✂️")
-        (choiceUser === "scissor✂️" && choicePC === "paper📋")
-        (choiceUser === "paper📋" && choicePC === "rock🧱")
+        (choicePC === "rock🧱" && choiceUser === "scissor✂️") ||
+        (choicePC === "scissor✂️" && choiceUser === "paper📋") ||
+        (choicePC === "paper📋" && choiceUser === "rock🧱")
     ) {
         winPC();
     } else {
@@ -58,7 +58,7 @@ function startTurn(e) {
     containerChoiceUser.innerText = choiceUser;
     containerChoicePC.innerText = choicePC;
 
-    if (pointsUser === 5) {
+    if (pointsUser === 5 || pointsPC === 5) {
 
         if (pointsUser === 5) {
             instructions.innerText = "🔥 You won! 🔥"
@@ -82,7 +82,7 @@ function winUser() {
 
 function winPC() {
     pointsPC++;
-    containerPointsPC.innerText = pointsUser;
+    containerPointsPC.innerText = pointsPC;
     containerWinPoint.innerText = "The computer won a point! 😭"
 }
 
@@ -98,8 +98,8 @@ function restartGame() {
     pointsUser = 0;
     pointsPC = 0;
 
-    containerPointsUser = pointsUser;
-    containerPointsPC = pointsPC;
+    containerPointsUser.innerText = pointsUser;
+    containerPointsPC.innerText = pointsPC;
 
     instructions.innerText = "First to get 5 points wins."
 }
