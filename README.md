@@ -33,17 +33,37 @@ It is also an entertaining game in which you can spend unlimited hours on.
 
 ## Testing 
 
-- Testing the primary function of the website which is to play a rock, paper & scissors game. In the first step we will click at a random tool button of the three which in this case will be the rock button.
+- Testing the functionality of the website which is to play a rock, paper & scissors game. In the first step we will click at a random tool button of the three which in this case will be the rock button.
 
 ![Testing1](README-media/testing%201.png)
 
-- Result: As we see in the next image the feature does exactly what its meant to do. 
+- Result: As we see in the next image the feature does exactly what its meant to do. We can see in this case that we chose rock as our first option and the computer chose the same, in this case it means that the match ended in a draw as no one got a point. But this is not it as the winner has to earn 5 points to win, as established on the topside of the website.
 
 ![Testing2](README-media/testing%202.png)
 
-- I tested that the page works in different browsers such as: Chrome, Internet Explorer and Safari.
-- I have assured that the heading, score and weapons sections are all redeable and easy to comprehend.
+- Testing: We will now test if the game keeps going or if it has been any problem in the code that makes the website terminate. To do so we will this time click on the paper button.
 
+![Testing3](README-media/testing%203.png)
+
+- Result: As demonstrated, the computer picked rock and lost. This meaning that we got ourselves our first point. At this time the score is 1-0 for the player.
+
+- Testing: To make sure that all buttons work we will lastly click on the scissors button.
+
+![Testing4](README-media/testing%204.png)
+
+- Result: We have made sure that the 3 buttons work. No bugs where found thus far.
+
+- Testing: As the last step we will skip til either the computer or the player wins. In this case as we see in the image below the player won by a score of 5-2. Finally we will try and click on the "Restart Game" button to see if it works or if we encounter any bugs.
+
+![Testing5](README-media/testing%205.png)
+
+![Testing6](README-media/testing%206.png)
+
+- Result: Seemingly the website works perfectly as we get rerouted to the start and get given the possibilty to start a new game. No bugs were found during the entirety of this testing process.
+
+### Testing on different websites
+
+- I tested that the page works in different browsers such as: Chrome, Internet Explorer and Safari.
 
 ### Validator Testing 
 
