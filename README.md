@@ -5,7 +5,7 @@ Rock, paper & scissors is a game developed in HTML, CSS and JavaScript.
 This game will let you see the potential that these programming laguages have.
 It is also an entertaining game in which you can spend unlimited hours on.
 
-![Responsive Mockup](media/responisve_mockup.png)
+![Responsive Mockup](README-media/responisve_mockup.png)
 
 ## Features 
 
@@ -15,23 +15,31 @@ It is also an entertaining game in which you can spend unlimited hours on.
 
   - Featured at the top of the page. The Rock, Paper & Scissors heading is easy to see for the user. Upon viewing the page, the user will be able to see the name of the game.
 
-![Logo](media/heading.png)
+![Logo](README-media/heading.png)
 
 - __The Score Area__
 
   - This section will allow the user to see the score. The user will be able to see the results after each round.
   - The user will be able to see the rules of the game. 
 
-![Score](media/score.png)
+![Score](README-media/score.png)
 
 - __The Weapons section__
 
   - This section will allow the user to play the game. The user will be able to easily see icons for rock, paper and scissor.
   - The user will be able to select the type of weapon they will be playing by clicking on the different icons.
 
-![Weapons](media/weapons.png)
+![Weapons](README-media/weapons.png)
 
 ## Testing 
+
+- Testing the primary function of the website which is to play a rock, paper & scissors game. In the first step we will click at a random tool button of the three which in this case will be the rock button.
+
+![Testing1](README-media/testing%201.png)
+
+- Result: As we see in the next image the feature does exactly what its meant to do. 
+
+![Testing2](README-media/testing%202.png)
 
 - I tested that the page works in different browsers such as: Chrome, Internet Explorer and Safari.
 - I have assured that the heading, score and weapons sections are all redeable and easy to comprehend.
@@ -59,7 +67,7 @@ It is also an entertaining game in which you can spend unlimited hours on.
 
 - I confirmed that the colors and fonts chosen are easy to read and accessible by running it through "lighthouse" in devtools.
 
-![Accessibility](/media/accesibility.png)
+![Accessibility](/README-media/accesibility.png)
 
 ## Deployment
 
